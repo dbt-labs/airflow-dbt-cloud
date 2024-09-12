@@ -8,7 +8,7 @@ Please see the [dbt Cloud Airflow Provider](https://airflow.apache.org/docs/apac
 # Getting Started 
 To use this repo you'll need:
 1. [dbt Cloud Teams or Enterprise account](https://www.getdbt.com/pricing) (with [admin access](https://docs.getdbt.com/docs/cloud/manage-access/enterprise-permissions)) in order to create a service token.
-2. Free [Docker account](https://app.docker.com/signup?) and [Docker Desktop](https://docs.docker.com/desktop/) installed
+2. [Docker Desktop](https://docs.docker.com/desktop/) installed
 3. [Astro CLI](https://www.astronomer.io/docs/astro/cli/install-cli) installed. On Mac use `brew install astro`.
 
 # Using this repo
