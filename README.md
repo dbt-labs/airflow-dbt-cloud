@@ -16,10 +16,11 @@ After creating all the requisite accounts and installing Astro CLI, simply:
 - Clone this repo locally: `gh repo clone dbt-labs/airflow-dbt-cloud`
 - Create a [dbt Cloud service token](https://docs.getdbt.com/docs/dbt-cloud-apis/service-tokens)
 - Create a [dbt Cloud job](https://docs.getdbt.com/docs/deploy/deploy-jobs#create-and-schedule-jobs)
+- Rename `.env.example` to `.env` and add your account, project, environment and job details
 - Start your Astro container: `astro dev start`
 - Create a new dbt Cloud Airflow connection. To do this:
   - From the Airflow interface, navigate to Admin and click on Connections
   - Click on the + sign to add a new connection, then click on the drop down to search for the dbt Cloud Connection Type
   - Add in your connection details and your default dbt Cloud account id. This is found in your dbt Cloud URL after the accounts route section (`/accounts/{YOUR_ACCOUNT_ID}`)
-- Update the code in the dags/ folder to use your Airflow connection, dbt account and dbt job information
+- Update `DBT_CLOUD_CONN_ID` in `.env` to use the name of your new connection
 - Run your first dbt Cloud Airflow DAG 🎉

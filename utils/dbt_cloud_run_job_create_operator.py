@@ -1,7 +1,8 @@
+# Developed by Benoit Perigaud (@b-per)
+
 import json
 from airflow.providers.dbt.cloud.operators.dbt import DbtCloudRunJobOperator
 from airflow.providers.dbt.cloud.hooks.dbt import DbtCloudResourceLookupError
-
 
 class DbtCloudRunJobCreateOperator(DbtCloudRunJobOperator):
     """
